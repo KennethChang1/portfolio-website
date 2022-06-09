@@ -1,0 +1,132 @@
+@import './reset';
+
+$card-border: 1px solid rgba(0, 0, 0, .15);
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.nav{
+    @extend .container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 40px
+}
+
+.section{
+    @extend .container;
+    margin-bottom: 96px;
+
+    &__img{
+        width: 100%;
+
+        &--main{
+            margin-bottom: 24px;
+        }
+
+        &--profile{
+            margin-bottom: 32px;
+        }
+
+        &--portfolio{
+            margin-bottom: 32px;
+        }
+    }
+
+    &__about-container{
+        display: flex;
+    }
+}
+
+.card{
+    &__title{
+        font-size: 40px;
+        line-height: 42px;
+        font-family: 'Ibarra Real Nova', serif;
+        margin-bottom: 32px;
+    }
+
+    &__copy{
+        font-family: 'Public Sans', sans-serif;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    &--profile{
+        border-top: $card-border;
+        border-bottom: $card-border;
+        padding: 32px 0 51px;
+    }
+
+    &--contact{
+        text-align: center;
+    }
+
+    &--portfolio{
+        border-bottom: $card-border;
+        padding-bottom: 25px;
+    }
+}
+
+.btn{
+    display: block;
+    font-family: 'Public Sans', sans-serif;
+    padding: 17px 0;
+    text-align: center;
+    font-size: 12px;
+
+    &--primary{
+        color: white;
+        width: 152px;
+        background-color: #203A4C;
+    }
+
+    &--secondary{
+        color: black;
+        width: 200px;
+        border: 1px solid #33323D;
+        letter-spacing: 2px;
+    }
+
+    &--auto{
+        margin: auto;
+    }
+}
+
+.down-arrow-container{
+    background: #162835;
+    text-align: center;
+    width: 48px;
+    padding: 17px 0;
+}
+
+.footer{
+    font-family: 'Public Sans', sans-serif;
+    background-color: #33323D;
+    text-align: center;
+    padding: 56px 0;
+
+    &__logo{
+        margin-bottom: 40px;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__link{
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}

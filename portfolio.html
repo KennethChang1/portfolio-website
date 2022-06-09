@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Oswald:wght@700&family=Public+Sans&display=swap"
+    rel="stylesheet">
+
   <title>Frontend Mentor | My Projects</title>
 </head>
+
 <body>
-
-  Home
-  Portfolio
-  Contact Me
-
-  Manage
-
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
-
-  View Project
-
-  Bookmark
-
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
-
-  View Project
-
-  Insure
-
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
-
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
+  <header>
+    <nav class="nav">
+      <img src="images/logo.svg" alt="">
+      <img src="images/icons/hamburger.svg" alt="">
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <img class="section__img section__img--portfolio" src="images/portfolio/Screen Shot 2022-06-09 at 17.27.51.png"
+        alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">To-do list</h2>
+        <p class="card__copy">This project required me to build a fully responsive CRUD website. I
+          used HTML5,
+          along with CSS and JavaScript for the areas that required interactivity. This project helps me to deepen my
+          understanding on manipulating arrays.
+        </p>
+        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+      </div>
+    </section>
+    <section class="section">
+      <img class="section__img section__img--portfolio" src="images/portfolio/Screen Shot 2022-06-09 at 17.47.39.png"
+        alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">Tip calculator</h2>
+        <p class="card__copy">This is a tip calculator website where user can input the bill amount, tip, and number of
+          people. The website will then calculate tip and total amount needed to be paid by each person. I used HTML5,
+          CSS and vanilla JavaScript for this project.
+        </p>
+        <a href="calculator.html" class="btn btn--secondary">VIEW PROJECT</a>
+      </div>
+    </section>
+    <section class="section">
+      <img class="section__img section__img--portfolio" src="images/portfolio/clock-portfolio.png" alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">Clock app</h2>
+        <p class="card__copy">This project is a clock app that uses the user's ip address to display their timezone. The
+          project is made by using HTML5, CSS, vanilla JavaScript, and API.
+        </p>
+        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+      </div>
+    </section>
+    <section class="section">
+      <img class="section__img section__img--portfolio" src="images/portfolio/bikerschoice.png" alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">Cycling website</h2>
+        <p class="card__copy">This is a landing page I created for a cycling business called bikerschoice. The tools I
+          used for this project are HTML5, SCSS and JavaScript.
+        </p>
+        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="card card--contact">
+        <h3 class="card__title">Interested in doing a project together?</h3>
+        <a href="contact.html" class="btn btn--secondary btn--auto">CONTACT ME</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img class="footer__logo" src="images/logo footer.svg" alt="">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">HOME</a>
+      <a class="footer__link" href="portfolio.html">PORTFOLIO</a>
+      <a class="footer__link" href="contact.html">CONTACT ME</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/KennethChang1" target="_blank"><img src="images/icons/github.svg" alt="github"></a>
+      <a href="https://www.linkedin.com/in/kenneth-chang-a95431177/" target="_blank"><img
+          src="images/icons/linkedin.svg" alt="linkedin"></a>
+      <a href="https://www.instagram.com/kenneth_krischang/" target="_blank"><img
+          src="images/icons/icons8-instagram-25.svg" alt="instagram"></a>
+    </div>
+  </footer>
 
 </body>
+
 </html>
