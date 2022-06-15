@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Oswald:wght@700&family=Public+Sans&display=swap"
+    rel="stylesheet">
+  <script src="JavaScript/script.js" defer></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Contact Me</title>
 </head>
+
 <body>
-
-  Home
-  Portfolio
-  Contact Me
-
-  Get in Touch
-
-  I’d love to hear about what you’re working on and how I could help. I’m currently 
-  looking for a new role and am open to a wide range of opportunities. My preference 
-  would be to find a position in a company in London. But I’m also happy to hear about 
-  opportunites that don’t fit that description. I’m a hard-working and positive person 
-  who will always approach each task with a sense of purpose and attention to detail. 
-  Please do feel free to check out my online profiles below and get in touch using the form.
-
-  Contact Me
-
-  Name
-  Jane Appleseed
-
-  Email Address
-  email@example.com
-
-  Message
-  How can I help?
-
-  Send Message
+  <header>
+    <nav class="nav">
+      <div class="nav__main">
+        <img src="images/logo.svg" alt="">
+        <div class="nav__btn">
+          <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+          <img class="nav__cross" src="images/icons/close.svg" alt="">
+        </div>
+      </div>
+      <div class="nav__links">
+        <ul class="nav__ul">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <div class="card card--contact-info">
+        <h1 class="card__title">Get in Touch</h1>
+        <p class="card__copy card__copy--contact">I'm now looking for a new position and am open to a variety of possibilities. My
+          preference would be to work for a company in Melbourne. But I'm also interested in hearing about opportunities
+          that do not meet that criteria. I'm a hardworking and cheerful individual that approaches each activity with
+          purpose and attention to detail.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="card card__flex">
+        <h2 class="card__info">Contact information</h2>
+        <p class="card__copy">Email: kenneth.kristopher27@gmail.com</p>
+        <p class="card__copy">Phone: +62 822 52513072</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img class="footer__logo" src="images/logo footer.svg" alt="">
+    <div class="footer__links">
+      <a class="footer__link" href="index.html">HOME</a>
+      <a class="footer__link" href="portfolio.html">PORTFOLIO</a>
+      <a class="footer__link" href="contact.html">CONTACT ME</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/KennethChang1" target="_blank"><img src="images/icons/github.svg" alt="github"></a>
+      <a href="https://www.linkedin.com/in/kenneth-chang-a95431177/" target="_blank"><img
+          src="images/icons/linkedin.svg" alt="linkedin"></a>
+      <a href="https://www.instagram.com/kenneth_krischang/" target="_blank"><img
+          src="images/icons/icons8-instagram-25.svg" alt="instagram"></a>
+    </div>
+  </footer>
 
 </body>
+
 </html>

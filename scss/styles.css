@@ -52,16 +52,18 @@ table {
   border-spacing: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .container, .nav, .section {
   width: 85%;
   margin: auto;
 }
 
 .nav {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.nav__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,8 +73,51 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 32px;
-  margin-bottom: 40px;
+}
+
+.nav__links {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+  width: 223px;
+  font-family: 'Public Sans', sans-serif;
+  letter-spacing: 2px;
+  background-color: #33323D;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.nav__links--active {
+  display: block;
+}
+
+.nav__cross {
+  display: none;
+}
+
+.nav__cross--active {
+  display: block;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.nav__ul a {
+  color: white;
+}
+
+.none {
+  display: none;
 }
 
 .section {
@@ -114,6 +159,12 @@ html {
   margin-bottom: 24px;
 }
 
+.card__info {
+  font-size: 35px;
+  margin-bottom: 32px;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
 .card--profile {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -127,6 +178,12 @@ html {
 .card--portfolio {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding-bottom: 25px;
+}
+
+.card--contact-info {
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .btn {
@@ -188,5 +245,124 @@ html {
   color: white;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__links {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: unset;
+    position: unset;
+  }
+  .nav__ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav__ul a {
+    color: black;
+  }
+  .section {
+    position: relative;
+  }
+  .section__img--main {
+    margin-bottom: 0;
+  }
+  .section__img--profile {
+    width: 540px;
+  }
+  .section--about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 125px;
+  }
+  .card__title--big {
+    font-size: 50px;
+    letter-spacing: -0.45px;
+  }
+  .card__copy--profile {
+    width: 350px;
+  }
+  .card--header {
+    position: absolute;
+    width: 445px;
+    bottom: 0;
+    background-color: white;
+    padding: 56px 55px 0 0;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    padding-left: 160px;
+  }
+  .footer__logo {
+    margin-bottom: unset;
+  }
+  .footer__links {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: unset;
+  }
+  .section__img--portfolio {
+    width: 540px;
+  }
+  .section--portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 125px;
+  }
+  .flex-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .card--contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 48px 0;
+  }
+  .card__copy--contact {
+    width: 635px;
+  }
+  .card__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

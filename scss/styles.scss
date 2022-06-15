@@ -2,10 +2,6 @@
 
 $card-border: 1px solid rgba(0, 0, 0, .15);
 
-html{
-    scroll-behavior: smooth;
-}
-
 .container{
     width: 85%;
     margin: auto;
@@ -13,11 +9,57 @@ html{
 
 .nav{
     @extend .container;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 32px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    position: relative;
+
+    &__main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__links{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        display: none;
+        width: 223px;
+        font-family: 'Public Sans', sans-serif;
+        letter-spacing: 2px;
+        background-color: #33323D;
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    &__links--active{
+        display: block;
+    }
+
+    &__cross{
+        display: none;
+    }
+
+    &__cross--active{
+        display: block;
+    }
+
+
+
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        & a{
+            color: white;
+        }
+    }
+}
+
+.none{
+    display: none;
 }
 
 .section{
@@ -59,6 +101,12 @@ html{
         margin-bottom: 24px;
     }
 
+    &__info{
+        font-size: 35px;
+        margin-bottom: 32px;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+
     &--profile{
         border-top: $card-border;
         border-bottom: $card-border;
@@ -72,6 +120,12 @@ html{
     &--portfolio{
         border-bottom: $card-border;
         padding-bottom: 25px;
+    }
+
+    &--contact-info{
+        padding: 24px 0;
+        border-top: $card-border;
+        border-bottom: $card-border;
     }
 }
 
@@ -128,5 +182,115 @@ html{
         color: white;
         font-size: 12px;
         letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .hamburger{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__links{
+        display: block;
+        width: fit-content;
+        background-color: unset;
+        position: unset;
+    }
+
+    .nav__ul{
+        flex-direction: row;
+    }
+
+    .nav__ul a{
+        color: black;
+    }
+    .section{
+        position: relative;
+
+        &__img--main{
+            margin-bottom: 0;
+        }
+
+        &__img--profile{
+            width: 540px;
+        }
+
+        &--about{
+            display: flex;
+            gap: 125px;
+        }
+    }
+
+    .card{
+        &__title--big{
+            font-size: 50px;
+            letter-spacing: -0.45px;
+        }
+
+        &__copy--profile{
+            width: 350px;
+        }
+    }
+    .card--header{
+        position: absolute;
+        width: 445px;
+        bottom: 0;
+        background-color: white;
+        padding: 56px 55px 0 0;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-left: 160px;
+        // justify-content: space-around;
+
+        &__logo{
+            margin-bottom: unset;
+        }
+
+        &__links{
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: unset;
+        }
+    }
+
+    // portfolio
+    .section{
+        &__img--portfolio{
+            width: 540px;
+        }
+    }
+    .section--portfolio{
+        display: flex;
+        gap: 125px;
+    }
+
+    .flex-reverse{
+        flex-direction: row-reverse;
+    }
+
+    // contact
+    .card--contact-info{
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 0;
+    }
+
+    .card__copy--contact{
+        width: 635px;
+    }
+
+    .card__flex{
+        display: flex;
+        justify-content: space-between;
     }
 }

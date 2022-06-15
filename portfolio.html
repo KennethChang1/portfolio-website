@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Oswald:wght@700&family=Public+Sans&display=swap"
     rel="stylesheet">
+  <script src="JavaScript/script.js" defer></script>
 
   <title>Frontend Mentor | My Projects</title>
 </head>
@@ -19,12 +20,24 @@
 <body>
   <header>
     <nav class="nav">
-      <img src="images/logo.svg" alt="">
-      <img src="images/icons/hamburger.svg" alt="">
+      <div class="nav__main">
+        <img src="images/logo.svg" alt="">
+        <div class="nav__btn">
+          <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+          <img class="nav__cross" src="images/icons/close.svg" alt="">
+        </div>
+      </div>
+      <div class="nav__links">
+        <ul class="nav__ul">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
-    <section class="section">
+    <section class="section section--portfolio">
       <img class="section__img section__img--portfolio" src="images/portfolio/Screen Shot 2022-06-09 at 17.27.51.png"
         alt="">
       <div class="card card--portfolio">
@@ -34,10 +47,10 @@
           along with CSS and JavaScript for the areas that required interactivity. This project helps me to deepen my
           understanding on manipulating arrays.
         </p>
-        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+        <a href="https://kennethchang1.github.io/to-do-app/" class="btn btn--secondary">VIEW PROJECT</a>
       </div>
     </section>
-    <section class="section">
+    <section class="section section--portfolio flex-reverse">
       <img class="section__img section__img--portfolio" src="images/portfolio/Screen Shot 2022-06-09 at 17.47.39.png"
         alt="">
       <div class="card card--portfolio">
@@ -46,27 +59,48 @@
           people. The website will then calculate tip and total amount needed to be paid by each person. I used HTML5,
           CSS and vanilla JavaScript for this project.
         </p>
-        <a href="calculator.html" class="btn btn--secondary">VIEW PROJECT</a>
+        <a href="https://kennethchang1.github.io/tip-calculator/" class="btn btn--secondary">VIEW PROJECT</a>
       </div>
     </section>
-    <section class="section">
+    <section class="section section--portfolio">
       <img class="section__img section__img--portfolio" src="images/portfolio/clock-portfolio.png" alt="">
       <div class="card card--portfolio">
         <h2 class="card__title">Clock app</h2>
         <p class="card__copy">This project is a clock app that uses the user's ip address to display their timezone. The
           project is made by using HTML5, CSS, vanilla JavaScript, and API.
         </p>
-        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+        <a href=https://kennethchang1.github.io/clock-app/ class="btn btn--secondary">VIEW PROJECT</a>
       </div>
     </section>
-    <section class="section">
+    <section class="section section--portfolio flex-reverse">
       <img class="section__img section__img--portfolio" src="images/portfolio/bikerschoice.png" alt="">
       <div class="card card--portfolio">
         <h2 class="card__title">Cycling website</h2>
         <p class="card__copy">This is a landing page I created for a cycling business called bikerschoice. The tools I
           used for this project are HTML5, SCSS and JavaScript.
         </p>
-        <a href="todo.html" class="btn btn--secondary">VIEW PROJECT</a>
+        <a href="https://bikerschoice.netlify.app/" class="btn btn--secondary">VIEW PROJECT</a>
+      </div>
+    </section>
+    <section class="section section--portfolio">
+      <img class="section__img section__img--portfolio" src="images/portfolio/chat app.png" alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">Chat app</h2>
+        <p class="card__copy">This is a chat application project where user can communicate with each other. This
+          project has me handling JSON files with the use of fetch.
+        </p>
+        <a href="https://kennethchang1.github.io/interactive-comment-section/" class="btn btn--secondary">VIEW
+          PROJECT</a>
+      </div>
+    </section>
+    <section class="section section--portfolio flex-reverse">
+      <img class="section__img section__img--portfolio" src="images/portfolio/tic tac toe.png" alt="">
+      <div class="card card--portfolio">
+        <h2 class="card__title">Tic tac toe</h2>
+        <p class="card__copy">This is a classic tic tac toe game I created with HTML, SCSS and JavaScript. The project
+          uses several array methods such as every and includes.
+        </p>
+        <a href="https://kennethchang1.github.io/tic-tac-toe-2/" class="btn btn--secondary">VIEW PROJECT</a>
       </div>
     </section>
     <section class="section">

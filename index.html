@@ -12,6 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Oswald:wght@700&family=Public+Sans&display=swap"
     rel="stylesheet">
+  <script src="JavaScript/scroll.js" defer></script>
+  <script src="JavaScript/script.js" defer></script>
 
   <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
@@ -19,28 +21,43 @@
 <body>
   <header>
     <nav class="nav">
-      <img src="images/logo.svg" alt="">
-      <img src="images/icons/hamburger.svg" alt="">
+      <div class="nav__main">
+        <img src="images/logo.svg" alt="">
+        <div class="nav__btn">
+          <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+          <img class="nav__cross" src="images/icons/close.svg" alt="">
+        </div>
+      </div>
+      <div class="nav__links">
+        <ul class="nav__ul">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
     <section class="section">
-      <img class="section__img section__img--main" src="images/homepage/mobile/image-homepage-hero.jpg" alt="">
-      <div class="card">
-        <h1 class="card__title">Hey, I’m Kenneth Chang and I love building websites</h1>
+      <picture>
+        <source media="(min-width:700px)" srcset="images/homepage/desktop/image-homepage-hero.jpg">
+        <img class="section__img section__img--main" src="images/homepage/mobile/image-homepage-hero.jpg" alt="">
+      </picture>
+      <div class="card card--header">
+        <h1 class="card__title card__title--big">Hey, I’m Kenneth Chang and I love building websites</h1>
         <div class="section__about-container">
           <div class="down-arrow-container">
             <img class="down-arrow" src="images/icons/down-arrows.svg" alt="">
           </div>
-          <a href="index.html#about" class="btn btn--primary">ABOUT ME</a>
+          <a class="btn btn--primary" id="about-btn">ABOUT ME</a>
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section section--about">
       <img class="section__img section__img--profile" src="images/IMG_0110.jpg" alt="profile-image">
       <div class="card card--profile" id="about">
         <h2 class="card__title">About Me</h2>
-        <p class="card__copy">I’m a junior front-end developer looking for a new role in an exciting company. I focus on
+        <p class="card__copy card__copy--profile">I’m a junior front-end developer looking for a new role in an exciting company. I focus on
           writing accessible
           HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use
           vanilla JS, but I can adapt to whatever tools are required. When I’m not coding, you’ll find me outdoors. I
